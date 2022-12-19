@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
-
+h4 {
+    text-align : center;
+}
+a {
+    text-decoration: none;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -20,13 +25,31 @@ nav ul {
     justify-content: space-evenly;
 }
 
+#booker button {
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: blue;
+    border-style: none;
+    border-radius: 5px;
+    color : white;
+}
+
+.movie {
+    border: 1.5px solid rgb(16, 16, 26);
+    border-radius: 15px;
+}
+
 .movie-img-wrapper {
     background-size: cover;
     width: 150px;
     height: 200px;
+    margin: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .movie-holder {
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
 }
@@ -51,6 +74,7 @@ nav ul {
     grid-template-rows: repeat(3, 70px);
     grid-template-columns: repeat(4, 70px);
     gap: 1rem;
+    
 }
 
 #booker {
@@ -77,11 +101,19 @@ nav ul {
     background-color: red;
     cursor: not-allowed;
     pointer-events: none;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 25% 0%;
+    text-align: center;
 }
 
 .available-seat {
     background-color: green;
     cursor: pointer;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 25% 0%;
+    text-align: center;
 }
 
 .selected-seat {
